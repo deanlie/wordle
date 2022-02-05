@@ -55,14 +55,15 @@ aims to help you find these good candidate words.
 
 Advanced:
 
+-   `letter_freq` order of letters by frequency in the `wordle_dict`
 -   `orthogonal_words` sets of `n` words which encompass the top `n*5`
     letters (by word frequency in the `wordle_dict`)
 -   `filter_words()` is a stateless function for filtering a list of
     words by various constraints on letter position.
--   `WordleGame` R6 class represnting a wordle game engine
+-   `WordleGame` R6 class representing a wordle game engine
     -   `$new()` to create a new game and internally choose a target
         word for this game
-    -   `$try(word)` to try a word and see what the respnse is in
+    -   `$try(word)` to try a word and see what the response is in
         relation to the hidden target word
     -   `$share()` create a block of unicode representing the evolution
         of the solution process.
